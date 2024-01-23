@@ -1,7 +1,7 @@
 {
-  "name": "express_mail_worker",
+  "name": "express_mail_queue",
   "version": "1.0.0",
-  "description": "Express Mail worker queue consumer for sending mail to user/customers",
+  "description": "Express Mail queue consumer for sending mail to user/customers",
   "main": "index.ts",
   "scripts": {
     "start:dev": "nodemon --legacy-watch src/index.ts",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scorcism/express-mail-worker-queue.git"
+    "url": "git+https://github.com/scorcism/express-mail-queue.git"
   },
   "keywords": [
     "Express"
@@ -18,9 +18,9 @@
   "author": "Abhishek Pathak <abhishekpathak1720@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scorcism/express-mail-worker-queue/issues"
+    "url": "https://github.com/scorcism/express-mail-queue/issues"
   },
-  "homepage": "https://github.com/scorcism/express-mail-worker-queue#readme",
+  "homepage": "https://github.com/scorcism/express-mail-queue#readme",
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/dotenv": "^8.2.0",
