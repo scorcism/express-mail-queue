@@ -1,9 +1,9 @@
 import express, { Response, Request } from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import routesApi from "./api/routes/index";
 const PORT = 8080 || process.env.NODE_PORT;
 dotenv.config();
+import rootController from "./api/controller/root.controller";
 
 const startApp = () => {
   const app = express();
@@ -14,7 +14,9 @@ const startApp = () => {
     res.send(`Hello World!`);
   });
 
-  app.use("/api", routesApi);
+  // Queues
+  rootController.welcomeMailListWorker;
+  rootController.emailVerificationMailWorker;
 
   app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`);

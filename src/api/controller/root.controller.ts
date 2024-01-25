@@ -1,12 +1,40 @@
-import { Request, Response } from "express";
-import rootService from "../service/root.service";
-import httpStatus from "http-status";
+import { Worker } from "bullmq";
+const REDIS_HOST = String(process.env.REDIS_HOST);
+const REDIS_PORT = Number(process.env.REDIS_PORT);
+const REDIS_USERNAME = String(process.env.REDIS_USERNAME);
+const REDIS_PASSWORD = String(process.env.REDIS_PASSWORD);
 
-const health = (req: Request, res: Response) => {
-  const _health = rootService.health();
-  res.status(httpStatus.OK).json(_health);
-};
+const welcomeMailListWorker = new Worker(
+  "welcome-mail-list-queue",
+  async (job) => {
+    console.log("welcome mail data: ", job);
+  },
+  {
+    connection: {
+      host: REDIS_HOST,
+      port: REDIS_PORT,
+      username: REDIS_USERNAME,
+      password: REDIS_PASSWORD,
+    },
+  },
+);
+
+const emailVerificationMailWorker = new Worker(
+  "emailVerification-mail-list-queue",
+  async (job) => {
+    console.log("emailVerification-mail-list-queue data", job.data);
+  },
+  {
+    connection: {
+      host: REDIS_HOST,
+      port: REDIS_PORT,
+      username: REDIS_USERNAME,
+      password: REDIS_PASSWORD,
+    },
+  },
+);
 
 export default {
-  health,
+  welcomeMailListWorker,
+  emailVerificationMailWorker,
 };

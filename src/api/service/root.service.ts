@@ -1,7 +1,8 @@
-const health = () => {
-  return "Health api working";
-};
+const welcomeMailServer = () => {};
+
+const emailVerificationService = () => {};
 
 export default {
-  health,
+  welcomeMailServer,
+  emailVerificationService,
 };
