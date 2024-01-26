@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "start:dev": "nodemon --legacy-watch src/index.ts",
-    "start:prod": "tsc && node ./build/index.js",
+    "build": "tsc",
     "prepare": "husky install"
   },
   "repository": {
