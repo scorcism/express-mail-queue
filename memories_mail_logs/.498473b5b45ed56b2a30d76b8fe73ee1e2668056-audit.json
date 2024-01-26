@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "memories_mail_logs\\.498473b5b45ed56b2a30d76b8fe73ee1e2668056-audit.json",
+    "files": [
+        {
+            "date": 1706256664201,
+            "name": "memories_mail_logs\\26-Jan-2024.log",
+            "hash": "df29ed7490efa8241e6a584816125bea069d7beeaf006ceeb12928611b17dc9c"
+        }
+    ],
+    "hashType": "sha256"
+}
