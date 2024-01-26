@@ -12,6 +12,8 @@ services:
       - "6379:6379"
     env_file:
       - ./.env
+    volumes:
+      - ./redis_data:/data
       
   mail-consumer:
     depends_on:
