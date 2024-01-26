@@ -26,3 +26,8 @@
 26-Jan-2024 14:23:49 info: Example app listening on port 8080 
 26-Jan-2024 14:23:56 info: Example app listening on port 8080 
 26-Jan-2024 14:24:01 info: Example app listening on port 8080 
+26-Jan-2024 14:24:08 info: Example app listening on port 8080 
+26-Jan-2024 10:09:02 info: Example app listening on port 8080 
+26-Jan-2024 10:10:36 info: Example app listening on port 8080 
+26-Jan-2024 10:10:51 info: Working on 1 Job resetPasswordService 
+26-Jan-2024 10:10:55 info: Mail send to [User: thescor32k@gmail.com] [Subject: Reset Password - Memories] [response info: 250 2.0.0 OK  1706263853 x34-20020a17090a6c2500b0028c465b050asm901696pjj.54 - gsmtp] 
