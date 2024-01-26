@@ -32,3 +32,10 @@
 26-Jan-2024 10:10:51 info: Working on 1 Job resetPasswordService 
 26-Jan-2024 10:10:55 info: Mail send to [User: thescor32k@gmail.com] [Subject: Reset Password - Memories] [response info: 250 2.0.0 OK  1706263853 x34-20020a17090a6c2500b0028c465b050asm901696pjj.54 - gsmtp] 
 26-Jan-2024 10:48:48 info: Example app listening on port 8080 
+26-Jan-2024 13:55:33 info: Example app listening on port 8080 
+26-Jan-2024 14:59:37 info: Working on 1 Job emailVerificationService 
+26-Jan-2024 14:59:41 info: Mail send to [User: thescor32k@gmail.com] [Subject: Account Verification - Memories] [response info: 250 2.0.0 OK  1706281179 ml12-20020a17090334cc00b001d755b10448sm1045685plb.199 - gsmtp] 
+26-Jan-2024 14:59:48 info: Working on 1 Job welcomeMailServer 
+26-Jan-2024 14:59:48 info: Working on 2 Job welcomeMailServer 
+26-Jan-2024 14:59:51 info: Mail send to [User: thescor32k@gmail.com] [Subject: Welcome to Memories!] [response info: 250 2.0.0 OK  1706281190 x9-20020a170902e04900b001d6ee9d8957sm1046094plx.281 - gsmtp] 
+26-Jan-2024 14:59:52 info: Mail send to [User: thescor32k@gmail.com] [Subject: Welcome to Memories!] [response info: 250 2.0.0 OK  1706281190 m18-20020a17090b069200b0029020be4298sm3296118pjz.0 - gsmtp] 
