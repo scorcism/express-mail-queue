@@ -4,6 +4,7 @@ import cors from "cors";
 const PORT = 8080 || process.env.NODE_PORT;
 dotenv.config();
 import rootController from "./api/controller/root.controller";
+import logger from "./config/logger";
 
 const startApp = () => {
   const app = express();
@@ -17,8 +18,10 @@ const startApp = () => {
   // Queues
   rootController.welcomeMailListWorker;
   rootController.emailVerificationMailWorker;
+  rootController.resetPasswordMailWorker;
 
   app.listen(PORT, () => {
+    logger.info(`Example app listening on port ${PORT}`);
     console.log(`Example app listening on port ${PORT}`);
   });
 };

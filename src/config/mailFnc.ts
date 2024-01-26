@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 const { SMTP_USER, SMTP_PASSWORD } = process.env;
+import logger from "./logger";
 
 const sendMail = (userEmail: string, subject: string, content: string) => {
   try {
@@ -22,14 +23,18 @@ const sendMail = (userEmail: string, subject: string, content: string) => {
 
     transporter.sendMail(mailOption, (error, info) => {
       if (error) {
-        console.error("Mail send eror: ", error);
+        logger.error(
+          `Mail send Error to [User: ${userEmail}] [Subject: ${subject}] error: ${error}`,
+        );
       } else {
-        console.info(`Mail sent to ${userEmail}:${info.response}`);
+        logger.info(
+          `Mail send to [User: ${userEmail}] [Subject: ${subject}] [response info: ${info.response}]`,
+        );
       }
     });
   } catch (error) {
-    console.error("Mail send eror: ", error);
+    logger.error(`Mail send Error: ${error}`);
   }
 };
 
-module.exports = sendMail;
+export default sendMail;

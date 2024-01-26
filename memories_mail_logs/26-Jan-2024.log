@@ -1,0 +1,28 @@
+26-Jan-2024 13:41:07 info: Mail send to thescor32k@gmail.com 250 2.0.0 OK  1706256665 p6-20020a170902eac600b001d73ac05559sm556966pld.184 - gsmtp 
+26-Jan-2024 13:42:20 info: Example app listening on port 8080 
+26-Jan-2024 13:43:47 info: Mail send to thescor32k@gmail.com 250 2.0.0 OK  1706256825 g18-20020aa78752000000b006dde36e87dbsm633153pfo.181 - gsmtp 
+26-Jan-2024 13:44:35 info: Example app listening on port 8080 
+26-Jan-2024 13:44:38 info: Example app listening on port 8080 
+26-Jan-2024 13:44:47 info: Example app listening on port 8080 
+26-Jan-2024 13:44:49 info: Example app listening on port 8080 
+26-Jan-2024 13:44:54 info: Example app listening on port 8080 
+26-Jan-2024 13:44:56 info: Example app listening on port 8080 
+26-Jan-2024 13:45:05 info: Example app listening on port 8080 
+26-Jan-2024 13:45:20 info: Example app listening on port 8080 
+26-Jan-2024 13:45:31 info: Mail send to [User: thescor32k@gmail.com] [Subject: Reset Password - Memories] [response info: 250 2.0.0 OK  1706256929 iw19-20020a170903045300b001d6f891535fsm561774plb.163 - gsmtp] 
+26-Jan-2024 13:46:40 info: Example app listening on port 8080 
+26-Jan-2024 13:46:46 info: Example app listening on port 8080 
+26-Jan-2024 13:51:54 info: Example app listening on port 8080 
+26-Jan-2024 13:52:04 info: Working on 9 Job resetPasswordService 
+26-Jan-2024 13:52:08 info: Mail send to [User: thescor32k@gmail.com] [Subject: Reset Password - Memories] [response info: 250 2.0.0 OK  1706257325 kx14-20020a170902f94e00b001d7313140b1sm569998plb.202 - gsmtp] 
+26-Jan-2024 13:57:09 info: Working on 10 Job resetPasswordService 
+26-Jan-2024 13:57:13 info: Mail send to [User: thescor32k@gmail.com] [Subject: Reset Password - Memories] [response info: 250 2.0.0 OK  1706257631 i18-20020a170902c95200b001d7439bf914sm570254pla.235 - gsmtp] 
+26-Jan-2024 14:23:11 info: Example app listening on port 8080 
+26-Jan-2024 14:23:21 info: Example app listening on port 8080 
+26-Jan-2024 14:23:28 info: Example app listening on port 8080 
+26-Jan-2024 14:23:34 info: Example app listening on port 8080 
+26-Jan-2024 14:23:37 info: Example app listening on port 8080 
+26-Jan-2024 14:23:47 info: Example app listening on port 8080 
+26-Jan-2024 14:23:49 info: Example app listening on port 8080 
+26-Jan-2024 14:23:56 info: Example app listening on port 8080 
+26-Jan-2024 14:24:01 info: Example app listening on port 8080 
