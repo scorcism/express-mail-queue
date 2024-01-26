@@ -2,3 +2,4 @@ node_modules
 .env
 memories_mail_logs
 redis_data
+dist

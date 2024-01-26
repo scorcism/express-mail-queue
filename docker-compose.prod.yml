@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  redis-server:
+    image: redis
+    container_name: redis_
+    command:
+      - /bin/sh
+      - -c
+      - redis-server --requirepass "$${REDIS_PASSWORD:?REDIS_PASSWORD variable is not set}"
+    ports:
+      - "6379:6379"
+    env_file:
+      - ./.env
+    volumes:
+      - ./redis_data:/data
+      
+  mail-consumer:
+    depends_on:
+      - redis-server
+    env_file:
+      - ./.env
+    build: 
+      context: .
+      dockerfile: Dockerfile.prod
+    environment:
+      - NODE_ENV="production"
+      - NODE_PORT=$NODE_PORT
+      - REDIS_HOST=$REDIS_HOST
+      - REDIS_USERNAME=$REDIS_USERNAME
+      - REDIS_PASSWORD=$REDIS_PASSWORD
+      - SMTP_USER=$SMTP_USER
+      - SMTP_PASSWORD=$SMTP_PASSWORD
+      - LOG_LEVEL=error
+    ports:
+      - "$NODE_PORT:$NODE_PORT"
+    restart: unless-stopped
+    command: npm run start:prod
+    volumes:
+      - './memories_mail_logs:/app/memories_mail_logs'

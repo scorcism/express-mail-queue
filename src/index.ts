@@ -22,7 +22,7 @@ const startApp = () => {
 
   app.listen(PORT, () => {
     logger.info(`Example app listening on port ${PORT}`);
-    console.log(`Example app listening on port ${PORT} pineapple`);
+    console.log(`Example app listening on port ${PORT}`);
   });
 };
 
